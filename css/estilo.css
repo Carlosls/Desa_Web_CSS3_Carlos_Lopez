@@ -4,6 +4,7 @@
 body{
 font-family: "Dancing Script";
 }
+
 header{
 color: white;
 background: #5b7989;
@@ -45,6 +46,7 @@ header nav a:hover{
 .pagvisit{
   text-decoration: none;
 }
+
 /* NOTE: imagen principal */
 
 .ima_prin{
@@ -61,7 +63,7 @@ header nav a:hover{
   filter:drop-shadow(10px 5px 20px black);
 }
 
-@media(max-width:700px){
+@media(max-width:900px){
 .ima_prin img{
 width: 80%;
 margin: 20px;
@@ -80,6 +82,13 @@ margin: 20px;
 }
 /* NOTE: imagenes secundarias */
 
+.contenedor_secund div{
+  width: 100%;
+    margin: 100px;
+    -webkit-filter:drop-shadow(10px 5px 20px blue);
+    filter:drop-shadow(10px 5px 20px black);
+}
+
 @media (min-width:700px){
 .contenedor_secund  {
   background: #d5c75f;
@@ -89,39 +98,30 @@ margin: 20px;
 -o-display: flex;
   display: flex;
 text-align: center;
-border: 1px;
+font-size: 20px;
 }
-p{font-size: 20px;}
-.contenedor_secund div{
-width: 100%;
-    margin: 60px;
-    -webkit-filter:drop-shadow(10px 5px 20px blue);
-      filter:drop-shadow(10px 5px 20px black);
-}
+
+
 
 .ima_secund1 img{
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  width: 100%;
-  border-radius: 10px;
-  order: 1;
-  transition-property: border;
-  transition-duration: 0.5s;
+
 }
 .ima_secund1 img:hover{
 	border: solid 4px black;
   -ms-transform: rotate(10deg); /* IE 9 */
 	-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
-	transform: rotate(10deg);}
+	transform: rotate(10deg);
+  transition-property: border;
+  transition-duration: 0.5s;
+}
 
 .ima_secund2 img{
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  width: 100%;
-  border-radius: 10px;
-  order: 2;
 
 }
 .ima_secund2 img:hover{
@@ -148,11 +148,7 @@ width: 80%;
     margin: 60px;
 
 }
-.contenedor_secund div{
-    margin: 60px;
-    -webkit-filter:drop-shadow(10px 5px 20px blue);
-      filter:drop-shadow(10px 5px 20px black);
-}
+
 
 .ima_secund1 img{
   width: 80%;
@@ -181,4 +177,15 @@ width: 80%;
   left:20px;
 	animation-duration: 2s;
 }
+}
+/* NOTE: pie de pagina */
+
+footer li{
+  font-size: 20px;}
+
+li {  list-style-type: none;}
+
+footer{
+  background: #C6d5c5;
+  border-radius: 0 0 10px 10px;
 }
