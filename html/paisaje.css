@@ -113,8 +113,43 @@ header nav a:hover{
     width: 80%;
   }
 }
-@media  (max-width:900px) {
-  .imagen1,.imagen2,.imagen3,.imagen4,.imagen5,.imagen6 {
-    width: 80%;
+
+
+/* NOTE: pie de pagina */
+
+footer li{
+  font-size: 20px;}
+
+li { list-style-type: none;}
+
+footer{
+  background: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+footer .contacto{
+  width: 25%;
+}
+footer .terminos{
+  width: 25%;
+}
+footer .redes{
+  width: 25%
+}
+footer .Derechos{
+  width: 25%;
+}
+
+@media (min-width:900px){
+footer {
+  display: flex;
+  }
+}
+
+@media (max-width:900px){
+footer  {
+display: block;
   }
 }
