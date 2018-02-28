@@ -1,46 +1,41 @@
-/* NOTE: encabezado */
-@font-face {
+*
+{
+	margin:0;
 }
+
 body{
-font-family: "Dancing Script";
+	background: #02010a;
+	font-family: 'Dancing Script';
+
+}
+
+#contenedor{
+	width: 900px;
+	margin: 0 auto;
+  min-height: 200px;
 }
 
 header{
+  background: #5b7989;
+  border-radius: 10px 10px 0 0;
+  text-shadow: 2px 2px #02010a;
+  padding: 15px 0;
+  display: flex;
+}
+#titul{
+width: 70%;
+text-indent: 20px;
 color: white;
-background: #5b7989;
-border-radius: 10px 10px 0 0;
-width: 100%;
-overflow: hidden;
-padding: 0;
-margin: 0;
-
 }
 
-header h1{
-  padding: 10px 10px;
-  font-size: 50px;
-  float: left;
-  overflow: hidden;
-  text-shadow: 2px 2px 2px  #02010a;
+ header a{
+color: white;
+  width: 40%;
+  font-size: 25px;
+  padding: 5px 10px;
 }
-
-header nav{
-float: right;
-line-height: 50px;
-padding: 50px;
-}
-header nav a{
-  -webkit-display: inline-block;
-  font-size: 20px;
-  color: white;
-  text-decoration: none
-    -webkit-transition:all 50ms ease;
-    -o-transition:all 50ms ease;
-  transition:all 50ms ease;
-  padding: 10px 10px;
-}
-header nav a:hover{
-  background: #3334;
+header a:hover{
+  background: #443d;
   border-radius: 10px;
 }
 .pagvisit{
