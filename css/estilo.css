@@ -38,13 +38,17 @@ header{
 #linck_pag a, #linck_pag a:hover{
   color: #fff;
   padding: 5px 10px;
-}
 
+}
+#linck_pag a:hover{
+	background: #456d3565;
+	border-radius: 10px;
+}
 #linck_pag a + a::before {
   color: #fff;
   text-decoration: none;
 }
-#linck_pag .actual{
+#linck_pag .pagvisit{
   text-decoration: none;
 }
 
@@ -157,7 +161,6 @@ footer .pie_pagina{
     text-align: center;
   }
 .ima_secund1  , .ima_secund2 {
-  display: block;
   width: 100%;
 }
 footer .pie_pagina{
