@@ -1,70 +1,56 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hora.css">
+    <script src="hora.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-    <title>Pagina principal</title>
-  </head>
-  <body>
-    <div id="contenedor">
-      <header>
-        <div id="titul">
-            <h1>Comenzando con la fotografia</h1>
-        </div>
-          <div id="linck_pag">
-            <a href="index.html" target="" class="pagvisit">Inicio</a>
-            <a href="html/paisajes.html" target=""> Paisajes</a>
-            <a href="html/retratos.html" target="">Retratos</a>
-          </div>
-      </header>
+    <title>Document</title>
+</head>
+<body>
 
-      <section id="ima_prin">
-          <img src="imagenes/principal.jpg" alt="imagen_principal" title="imagen_principal"/>
-        </section>
+    <header>
+        <img src="imagenes/logo1.png" alt="" width="100px" height="50%">
+        <nav class="navigation">
+            <a href=""> Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">contact</a>
+            <button class="btnlogin">Ingresar</button>
+        </nav>
+    </header>
 
-      <section id="ima_secun">
-          <div class="ima_secund1">
-            <img src="imagenes/img_secund1.jpg" alt="imagen secundaria1" title="imagenSecud"/>
-            <h2>Paisajes</h2>
-          </div>
-          <div class="ima_secund2">
-            <img src="imagenes/img_secund2.jpg" alt="imagen secundaria2" title="imagenSecud2"/>
-            <h2>Retratos</h2>
-          </div>
-        </section>
+    <div class="whapper">
+        <div class="form-box">
+            <h2>login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-circle"></ion-icon>
+                    </span>
+                    <input type="text" required id="usuario">
+                    <label for="">usuario</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required id="contrasena">
+                    <label >Password</label>
+                </div>
+               
+                <button type="button" id="btn" class="btn-outline-dark" onclick="login();">ingresar</button>
+                
+                
+            </form>
+        </div>
+    </div> 
+    
+</body>
 
-      <footer>
-        <div class="pie_pagina">
-          <h2>Contacto</h2>
-          <ul>
-            <li><a href="mailto:carlslopezz@gmail.com">Email</a></li>
-            <li>5av. 1-12 zona 1 San Marcos Guatemala</li>
-            <li>Telefono:54231948</li>
-          </ul>
-        </div>
-        <div class="pie_pagina">
-          <h2>Terminos</h2>
-          <p>Conoce nuetros terminos y condiciones</p>
-        </div>
-        <div class="pie_pagina">
-          <h2>Redes Sociales</h2>
-          <ul>
-            <li><img class="iconos_redes" src="imagenes/facebook.png" width="30px"/>Comenzando la fotografia</li>
-            <li><img class="iconos_redes" src="imagenes/twitter.png" width="30px"/>Comenzando la fotografia</li>
-            <li><img class="iconos_redes" src="imagenes/instagram.png" width="30px"/>Comenzando la fotografia</li>
-          </ul>
-        </div>
-        <div class="pie_pagina">
-          <h2>Contacto</h2>
-          <ul>
-            <li><img  class="iconos_redes"src="imagenes/copy.png" width="30px"/>Carlos Lopez.. 2018</li>
-          </ul>
-        </div>
-      </footer>
-    </div>
 
-  </body>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
